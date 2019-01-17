@@ -1,4 +1,5 @@
 # phoenixfs
+<<<<<<< HEAD
 
 > Phoenix Finacial Services Vue Demo 
 
@@ -19,3 +20,6 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+=======
+Phoenix Financial Services website vue demo.
+>>>>>>> f6e5a03d95c657eb64a3daa5bb37e8f21c314340
