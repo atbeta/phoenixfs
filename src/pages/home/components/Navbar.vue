@@ -9,9 +9,9 @@
      </b-col>
      <b-col cols="4">
        <ul class="nar-list">
-         <li>首页</li>
-         <li>个人中心</li>
-         <li>关于我们</li>
+         <li><span>首页</span></li>
+         <li><span>个人中心</span></li>
+         <li><span>关于我们</span></li>
        </ul>
      </b-col>
    </b-row>
@@ -28,17 +28,26 @@ export default {
 <style lang="scss" scoped>
 .nav-container{
   height: 100px;
-  line-height: 100px;
+  .logo{
+    line-height: 100px;
+  }
   .nar-list{
     text-align: right;
     li{
       display: inline-block;
       list-style-type: none;
-      width: 80px;
-      margin-left: 10px;
+      width: 90px;
+      text-align: center;
       font-size: $middleFontSize;
       color: $baseBlack;
-      &:hover{
+      span{
+        display: inline-block;
+        width: 90px;
+        height: 40px;
+        margin-top: 30px;
+        &:hover{
+          border-bottom: 4px solid $baseOrange;
+        }
       }
     }
   }

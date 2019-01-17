@@ -68,14 +68,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.swiper-container {
-  padding: 0;
-  .swiper-item {
-    max-height: 420px;
-    img {
-      display: block;
-      width: 100%;
+  .swiper-container {
+    padding: 0;
+    .swiper-item {
+      max-height: 420px;
+      img {
+        display: block;
+        width: 100%;
+      }
     }
   }
-}
 </style>
