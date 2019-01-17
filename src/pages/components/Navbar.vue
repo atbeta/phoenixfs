@@ -9,8 +9,8 @@
      </b-col>
      <b-col cols="4">
        <ul class="nar-list">
-         <li><span>首页</span></li>
-         <li><span>个人中心</span></li>
+         <li><router-link to="/"><span>首页</span></router-link></li>
+         <li><router-link to="/login"><span>个人中心</span></router-link></li>
          <li><span>关于我们</span></li>
        </ul>
      </b-col>
@@ -40,6 +40,12 @@ export default {
       text-align: center;
       font-size: $middleFontSize;
       color: $baseBlack;
+      a{
+        color: $baseBlack;
+        &:hover{
+        color: $baseBlack;
+      }
+      }
       span{
         display: inline-block;
         width: 90px;

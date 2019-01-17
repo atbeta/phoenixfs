@@ -7,7 +7,7 @@
       <div class="wechat"><span>微信公众号</span><a href=""><img src="" alt=""></a></div>
     </b-col>
     <b-col class="header-right" cols="3">
-      <div class="login"><span>登录</span></div>
+      <div class="login"><router-link to="/login"><span>登录</span></router-link></div>
       <div class="help"><span>帮助</span></div>
     </b-col>
   </b-row>
@@ -61,6 +61,9 @@ export default {
       margin-right: 20px;
       border-radius: 3px;
       background-color: $baseOrange;
+      a{
+        color: $baseWhite;
+      }
     }
     .help{
     }

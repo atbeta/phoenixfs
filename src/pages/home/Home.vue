@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import HomeHeader from './components/Header'
-import HomeNavbar from './components/Navbar'
+import HomeHeader from '../components/Header'
+import HomeNavbar from '../components/Navbar'
 import HomeSwiper from './components/Swiper'
 import HomeNews from './components/News'
-import HomeFooter from './components/Footer'
+import HomeFooter from '../components/Footer'
 export default {
   name: 'Home',
   components: {

@@ -17,14 +17,14 @@
         <img src="https://www.fenghuangjinfu.com/static/themes/bgy/img/foot/f-r1-2.png" alt="">
         <span>服务说明</span>
         <ul>
-          <li>平台动态</li>
+          <li style="text-indent: 5px">平台动态</li>
         </ul>
       </b-col>
       <b-col class="footer-help" cols="2">
         <img src="https://www.fenghuangjinfu.com/static/themes/bgy/img/foot/f-r1-4.png" alt="">
         <span>帮助中心</span>
         <ul>
-          <li>常见问题</li>
+          <li style="text-indent: 5px">常见问题</li>
         </ul>
       </b-col>
     </b-row>
@@ -91,14 +91,14 @@ export default {
     ul {
       li {
         display: block;
-        margin-left: -10px;
+        margin-left: 30px;
         margin-top: 10px;
-        list-style-type: none;
       }
     }
   }
 }
 .copyright{
+  margin-top: 30px;
   padding: 0;
   height: 80px;
   background-color: $footerBgColor;
