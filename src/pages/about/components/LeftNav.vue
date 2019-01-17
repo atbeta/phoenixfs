@@ -1,0 +1,99 @@
+<template>
+  <b-container fluid class="about-container">
+    <b-container>
+      <b-row>
+        <breadcrumb class="left-nav-breadcrumb"></breadcrumb>
+      </b-row>
+      <b-row>
+        <b-col cols="3" class="left-nav-list">
+          <ul>
+            <li class="nav-list-item">关于我们</li>
+            <li class="nav-list-item"><router-link to="/notice">平台公告</router-link></li>
+            <li class="nav-list-item"><router-link to="/about">关于我们</router-link></li>
+            <li class="nav-list-item"><router-link to="/contact">联系我们</router-link></li>
+            <li class="nav-list-item">加入我们</li>
+            <li class="nav-list-item"><router-link to="/partner">合作伙伴</router-link></li>
+            <li class="nav-list-item">平台动态</li>
+          </ul>
+        </b-col>
+        <b-col cols="9" class="about-content-container">
+          <div class="about-content-wrapper">
+          <div class="about-content-title">
+            <slot name="about-content-title">关于我们</slot>
+          </div>
+          <div class="about-content">
+          <slot name="about-content"></slot>
+          </div>
+          </div>
+        </b-col>
+      </b-row>
+    </b-container>
+  </b-container>
+</template>
+<script>
+import Breadcrumb from '../../components/Breadcrumb'
+export default {
+  name: 'LeftNav',
+  components: {
+    Breadcrumb
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+.about-container{
+  background-color: $baseBgColor;
+  padding-bottom: 20px;
+}
+.left-nav-breadcrumb{
+  color: $baseLightGray;
+  background-color: inherit;
+  margin-bottom: 0;
+  font-size: $baseFontSize;
+  a{
+    color: $baseLightGray !important;
+  }
+}
+.left-nav-list{
+  .nav-list-item:first-child{
+    height: 60px;
+    line-height: 60px;
+    background-color: $navOrange;
+    color: $baseWhite;
+    font-weight: bold;
+  }
+  .nav-list-item{
+    height: 43px;
+    line-height: 43px;
+    font-size: $middleFontSize;
+    text-align: center;
+    background-color: $baseWhite;
+    color: $baseBlack;
+    &:hover:nth-child(n+2){
+      background-color: $baseHoverColor;
+    }
+    a{
+      text-decoration: none;
+      color: $baseBlack;
+    }
+  }
+}
+.about-content-container{
+  padding-top: 10px;
+  background-color: $baseWhite;
+  padding-left: 40px;
+  padding-right: 10px;
+  .about-content-wrapper{
+    .about-content-title{
+      font-size: $titleFontSize;
+      font-weight: bold;
+      color: $baseBlack;
+    }
+    .about-content{
+      margin-top: 15px;
+      margin-right: 20px;
+      border-top: 2px solid $aboutBorderColor;
+    }
+  }
+}
+</style>

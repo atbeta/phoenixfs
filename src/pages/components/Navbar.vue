@@ -11,7 +11,7 @@
        <ul class="nar-list">
          <li><router-link to="/"><span>首页</span></router-link></li>
          <li><router-link to="/login"><span>个人中心</span></router-link></li>
-         <li><span>关于我们</span></li>
+         <li><router-link to="/about"><span>关于我们</span></router-link></li>
        </ul>
      </b-col>
    </b-row>
@@ -38,8 +38,9 @@ export default {
       list-style-type: none;
       width: 90px;
       text-align: center;
-      font-size: $middleFontSize;
-      color: $baseBlack;
+      font-size: $navFontSize;
+      color: $baseLightGray;
+      font-weight: 500;
       a{
         color: $baseBlack;
         &:hover{
