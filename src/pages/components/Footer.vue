@@ -8,16 +8,16 @@
       <b-col class="footer-about" cols="2">
         <img src="https://www.fenghuangjinfu.com/static/themes/bgy/img/foot/f-r1-2.png" alt=""><span>关于我们</span>
         <ul>
-          <li>凤凰金服</li>
-          <li>加入我们</li>
-          <li>联系我们</li>
+          <li><router-link to="/about">凤凰金服</router-link></li>
+          <li><router-link to="/joinus">加入我们</router-link></li>
+          <li><router-link to="contact">联系我们</router-link></li>
         </ul>
       </b-col>
       <b-col class="footer-service" cols="2">
         <img src="https://www.fenghuangjinfu.com/static/themes/bgy/img/foot/f-r1-2.png" alt="">
         <span>服务说明</span>
         <ul>
-          <li style="text-indent: 5px">平台动态</li>
+          <li style="text-indent: 5px"><router-link to="/trend">平台动态</router-link></li>
         </ul>
       </b-col>
       <b-col class="footer-help" cols="2">
@@ -87,12 +87,14 @@ export default {
       font-size: $middleFontSize;
       font-weight: bold;
     }
-
     ul {
       li {
         display: block;
         margin-left: 30px;
         margin-top: 10px;
+        a{
+          color: $footerFontColor
+        }
       }
     }
   }

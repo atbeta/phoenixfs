@@ -8,6 +8,7 @@ import Contact from '@/pages/about/Contact'
 import Joinus from '@/pages/about/Joinus'
 import Partner from '@/pages/about/Partner'
 import Trend from '@/pages/about/Trend'
+import ResetPasswd from '../pages/login/ResetPasswd'
 
 Vue.use(Router)
 
@@ -52,6 +53,11 @@ export default new Router({
       path: '/trend',
       name: 'Trend',
       component: Trend
+    },
+    {
+      path: '/resetpw',
+      name: 'ResetPasswd',
+      component: ResetPasswd
     }
   ]
 })

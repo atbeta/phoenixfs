@@ -37,7 +37,7 @@
         <b-form-group id="seven-days-group">
           <b-form-checkbox-group v-model="form.checked" id="seven-days">
             <b-form-checkbox value="me">记住7天</b-form-checkbox>
-            <span>忘记密码</span>
+            <span class="reset-pw"><router-link to="/resetpw">忘记密码</router-link></span>
           </b-form-checkbox-group>
         </b-form-group>
         <b-button class="login-button" type="submit">立即登录</b-button>
@@ -189,10 +189,12 @@ export default {
         margin-top: 10px;
         #seven-days {
           font-size: $baseFontSize;
-
-          span {
+          .reset-pw {
             display: inline-block;
             float: right;
+            a{
+              color: $baseGray;
+            }
           }
         }
       }

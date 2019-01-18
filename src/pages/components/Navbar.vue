@@ -4,7 +4,9 @@
    <b-row class="nav-container">
      <b-col cols="8">
        <div class="logo">
+         <router-link to="/">
          <img src="https://www.fenghuangjinfu.com/static/pic/logo/bb" alt="">
+         </router-link>
        </div>
      </b-col>
      <b-col cols="4">
