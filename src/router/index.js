@@ -5,7 +5,9 @@ import Login from '@/pages/login/Login'
 import About from '@/pages/about/About'
 import Notice from '@/pages/about/Notice'
 import Contact from '@/pages/about/Contact'
+import Joinus from '@/pages/about/Joinus'
 import Partner from '@/pages/about/Partner'
+import Trend from '@/pages/about/Trend'
 
 Vue.use(Router)
 
@@ -37,9 +39,19 @@ export default new Router({
       component: Contact
     },
     {
+      path: '/joinus',
+      name: 'Joinus',
+      component: Joinus
+    },
+    {
       path: '/partner',
       name: 'Partner',
       component: Partner
+    },
+    {
+      path: '/trend',
+      name: 'Trend',
+      component: Trend
     }
   ]
 })

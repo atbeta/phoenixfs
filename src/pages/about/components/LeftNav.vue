@@ -2,18 +2,15 @@
   <b-container fluid class="about-container">
     <b-container>
       <b-row>
-        <breadcrumb class="left-nav-breadcrumb"></breadcrumb>
-      </b-row>
-      <b-row>
         <b-col cols="3" class="left-nav-list">
           <ul>
             <li class="nav-list-item">关于我们</li>
             <li class="nav-list-item"><router-link to="/notice">平台公告</router-link></li>
             <li class="nav-list-item"><router-link to="/about">关于我们</router-link></li>
             <li class="nav-list-item"><router-link to="/contact">联系我们</router-link></li>
-            <li class="nav-list-item">加入我们</li>
+            <li class="nav-list-item"><router-link to="/joinus">加入我们</router-link></li>
             <li class="nav-list-item"><router-link to="/partner">合作伙伴</router-link></li>
-            <li class="nav-list-item">平台动态</li>
+            <li class="nav-list-item"><router-link to="/trend">平台动态</router-link></li>
           </ul>
         </b-col>
         <b-col cols="9" class="about-content-container">
@@ -44,15 +41,6 @@ export default {
 .about-container{
   background-color: $baseBgColor;
   padding-bottom: 20px;
-}
-.left-nav-breadcrumb{
-  color: $baseLightGray;
-  background-color: inherit;
-  margin-bottom: 0;
-  font-size: $baseFontSize;
-  a{
-    color: $baseLightGray !important;
-  }
 }
 .left-nav-list{
   .nav-list-item:first-child{

@@ -2,6 +2,7 @@
   <div>
     <home-header></home-header>
     <home-navbar></home-navbar>
+    <breadcrumb class="left-nav-breadcrumb" page='合作伙伴'></breadcrumb>
     <left-nav>
       <div slot="about-content-title">合作伙伴</div>
       <div slot="about-content">
@@ -16,16 +17,18 @@
 
 <script>
 import LeftNav from './components/LeftNav'
+import Breadcrumb from '../components/Breadcrumb'
 import HomeHeader from '../components/Header'
 import HomeNavbar from '../components/Navbar'
 import HomeFooter from '../components/Footer'
 export default {
-  name: 'About',
+  name: 'Partner',
   components: {
     HomeHeader,
     HomeNavbar,
     HomeFooter,
-    LeftNav
+    LeftNav,
+    Breadcrumb
   }
 }
 </script>
