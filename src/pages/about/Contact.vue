@@ -3,7 +3,7 @@
     <home-header></home-header>
     <home-navbar></home-navbar>
     <breadcrumb class="left-nav-breadcrumb" page='联系我们'></breadcrumb>
-    <left-nav>
+    <left-nav :index="3">
       <div slot="about-content-title">联系我们</div>
       <div slot="about-content">
         <div class="about-contact-content">

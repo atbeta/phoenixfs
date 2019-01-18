@@ -3,7 +3,7 @@
     <home-header></home-header>
     <home-navbar></home-navbar>
     <breadcrumb class="left-nav-breadcrumb" page='合作伙伴'></breadcrumb>
-    <left-nav>
+    <left-nav :index="5">
       <div slot="about-content-title">合作伙伴</div>
       <div slot="about-content">
         <div class="about-partner-content">

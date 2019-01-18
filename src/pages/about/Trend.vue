@@ -3,7 +3,7 @@
     <home-header></home-header>
     <home-navbar></home-navbar>
     <breadcrumb class="left-nav-breadcrumb" page='平台动态'></breadcrumb>
-    <left-nav>
+    <left-nav :index="6">
       <div slot="about-content-title">平台动态</div>
       <div slot="about-content">
         <div class="about-notice-content">

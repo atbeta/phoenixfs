@@ -28,11 +28,17 @@
   </b-container>
 </template>
 <script>
-import Breadcrumb from '../../components/Breadcrumb'
 export default {
   name: 'LeftNav',
-  components: {
-    Breadcrumb
+  props: {
+    index: {
+      type: Number,
+      default: 2
+    }
+  },
+  mounted () {
+    let currentItem = document.querySelectorAll('.left-nav-list>ul>li')[this.index]
+    currentItem.classList.add('current-page-item')
   }
 }
 </script>
@@ -64,6 +70,9 @@ export default {
       text-decoration: none;
       color: $baseBlack;
     }
+  }
+  .current-page-item{
+    background-color: $baseHoverColor;
   }
 }
 .about-content-container{
