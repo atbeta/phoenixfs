@@ -3,7 +3,7 @@
   <b-container>
     <b-row class="title-container">
     <b-col cols="10" class="title-left"><span>平台动态</span></b-col>
-    <b-col cols="2" class="title-more">更多 <span class="iconfont">&#xe604;</span></b-col>
+    <b-col cols="2" class="title-more"><router-link to="/trend">更多</router-link><span class="iconfont">&#xe604;</span></b-col>
     </b-row>
     <ul class="news-content-list">
       <li class="news-item" v-for="item in news" :key="item.id" v-show="current===item.index">
@@ -107,6 +107,9 @@ export default {
   .title-more{
     text-align: right;
     padding-right: 20px;
+    a{
+      color: $baseBlack;
+    }
   }
 .news-content-list{
   padding: 0;
