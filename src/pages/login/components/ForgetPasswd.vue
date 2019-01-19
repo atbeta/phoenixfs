@@ -96,6 +96,7 @@ export default {
    }
  }
  .reset-pw-progress{
+   width: 500px;
    margin: 0 24px;
    display: flex;
    flex-flow: row nowrap;
