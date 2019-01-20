@@ -46,7 +46,7 @@
                           label="验证码"
                           label-for="reset-pw-code">
               <b-form-input placeholder="请输入验证码" id="reset-pw-code"></b-form-input>
-              <img src="https://www.fenghuangjinfu.com/jcaptcha/findPwdByPhone" alt="">
+              <span class="pw-code-img"><img src="https://www.fenghuangjinfu.com/jcaptcha/findPwdByPhone" alt=""></span>
             </b-form-group>
               <b-button class="reset-pw-button" type="submit">提交</b-button>
             </b-form>
@@ -170,15 +170,17 @@ export default {
      }
    }
    #reset-pw-code-group{
+     position: relative;
      #reset-pw-code{
        width: 160px;
        margin-bottom: 20px;
-       position: relative;
      }
-     img{
-       position: absolute;
-       top: 5px;
-       right: -5px;
+     .pw-code-img{
+       img{
+         position: absolute;
+         top: 2px;
+         right: -5px;
+       }
      }
    }
    .reset-pw-button{
